@@ -11,14 +11,20 @@
 
 <body>
 
-    <div class="hello">
-
-        <h1>bangladesh</h1>
-        <h1>bangladesh</h1>
-
+    <div class="heading">
+        <h1 class="">This is a heading h1</h1>
+        <br>
     </div>
+
+
+
+
     <div class="color" id="drag">
         <h1 class="box">Hello, world!</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ad itaque eaque esse reiciendis animi error neque numquam natus quidem ex ducimus, mollitia perferendis deserunt odio repudiandae consectetur! Hic qui eaque harum assumenda sint
+        </p>
+        <br>
 
     </div>
     <div class="button_margin">
@@ -43,6 +49,67 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#drag").css("background-color", "blue");
+            $("#drag").css("color", "white");
+            $("#drag").css("margin", "auto");
+            $('#drag').dblclick(function() {
+                $('#drag').css('background-color', 'red');
+            });
+            $('#drag').click(function() {
+                $("#drag").css('background-color', 'orange')
+                $("#drag").css('color', 'white')
+            });
+            $('#drag').contextmenu(function() {
+                $('#drag').css('background-color', 'green');
+            });
+            // $('#drag').mouseenter(function() {
+            //     $('#drag').css('background-color', 'blue');
+            // });
+            $('#drag').mouseout(function() {
+                $('#drag').css("background-color", 'tan')
+            });
+            $('.button').click(function() {
+                $('#drag').addClass('hello');
+            });
+
+            $('.button2').click(function() {
+                $('#drag').removeClass('hello');
+
+            });
+            $('.button3').click(function() {
+                $('#drag').toggleClass('hello');
+
+            });
+            $('.button4').on({
+
+
+                "click": function() {
+                    // $('.box').append("<h1>rsbappy</h1>");
+                    // $(this).css('color', 'black');
+
+                    $('.box').Prepend("<h1>rsbappy</h1>");
+                    $(this).css('color', 'black');
+
+
+
+                },
+                "mouseenter": function() {
+                    $('#drag').css("background-color", 'pink')
+
+                }
+
+            });
+
+            $('.button4').click(function() {
+                $('#drag').append("<h1>rsbappy</h1>");
+
+            });
+
+        });
     </script>
 
     <script src="main.js"></script>
