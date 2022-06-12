@@ -12,9 +12,9 @@ $(document).ready(function() {
     $('#drag').contextmenu(function() {
         $('#drag').css('background-color', 'green');
     });
-    $('#drag').mouseenter(function() {
-        $('#drag').css('background-color', 'blue');
-    });
+    // $('#drag').mouseenter(function() {
+    //     $('#drag').css('background-color', 'blue');
+    // });
     $('#drag').mouseout(function() {
         $('#drag').css("background-color", 'tan')
     });
@@ -28,6 +28,25 @@ $(document).ready(function() {
     });
     $('.button3').click(function() {
         $('#drag').toggleClass('hello');
+
+    });
+    $('.button4').on({
+
+
+        "click": function() {
+            // $('.box').append("<h1>rsbappy</h1>");
+            // $(this).css('color', 'black');
+
+            $('.box').Prepend("<h1>rsbappy</h1>");
+            $(this).css('color', 'black');
+
+
+
+        },
+        "mouseenter": function() {
+            $('#drag').css("background-color", 'pink')
+
+        }
 
     });
 
