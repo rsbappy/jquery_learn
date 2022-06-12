@@ -18,5 +18,17 @@ $(document).ready(function() {
     $('#drag').mouseout(function() {
         $('#drag').css("background-color", 'tan')
     });
+    $('.button').click(function() {
+        $('#drag').addClass('hello');
+    });
+
+    $('.button2').click(function() {
+        $('#drag').removeClass('hello');
+
+    });
+    $('.button3').click(function() {
+        $('#drag').toggleClass('hello');
+
+    });
 
 });

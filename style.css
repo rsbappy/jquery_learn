@@ -15,3 +15,40 @@
         width: 300px;
         margin: auto;
     }
+    /* jquer  add class remove class toggle class style star */
+    
+    .button_margin {
+        margin-top: 5%;
+        margin-left: 30%;
+        font-size: 30px;
+    }
+    
+    .button {
+        height: 100px;
+        width: 200px;
+        background-color: red;
+        margin-right: 20px;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .button2 {
+        height: 100px;
+        width: 200px;
+        margin-right: 20px;
+        border-radius: 50px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .button3 {
+        height: 100px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+    }
+    /* jquer  add class remove class toggle class style star */
