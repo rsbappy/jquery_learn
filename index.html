@@ -40,7 +40,18 @@
         <button class="button4">
        Apend
         </button>
+
     </div>
+
+
+
+    <div> <button class="button5">
+        Click Clone Page 
+         </button></div>
+
+
+
+    <div id="clonepage"></div>
 
 
 
@@ -108,6 +119,19 @@
                 $('#drag').append("<h1>rsbappy</h1>");
 
             });
+
+            $('.button5').on({
+                'click': function() {
+                    $('#clonepage').load("/clone.html");
+                }
+            });
+
+
+            $('.button5').click(function() {
+                $('#clonepage').off('click');
+
+            });
+
 
         });
     </script>
