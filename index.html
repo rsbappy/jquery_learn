@@ -48,14 +48,21 @@
     <div> <button class="button5">
         Click Clone Page 
          </button></div>
+    <div id="clonepage">
+
+    </div>
 
 
 
-    <div id="clonepage"></div>
+    <div> <button id="show_hide" class="button6">
+        Click Hide & show Page 
+         </button></div>
 
 
 
+    <div id="hideshowpage">
 
+    </div>
 
 
 
@@ -125,6 +132,24 @@
                     $('#clonepage').load("/clone.html");
                 }
             });
+
+
+            $('.button5').click(function() {
+                $('#clonepage').slideToggle();
+            })
+
+
+            $('#show_hide').click(function() {
+                $('#hideshowpage').load("/after_before.html");
+            })
+
+            $('#show_hide').click(function() {
+                $('#hideshowpage').fadeToggle();
+            })
+
+
+
+
 
 
 
